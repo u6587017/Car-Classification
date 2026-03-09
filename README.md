@@ -9,5 +9,5 @@ This project utilitzes keras to classify car from 20 brands (3235 images)
 ## Accuracy
 <img width="547" height="461" alt="acc" src="https://github.com/user-attachments/assets/620f1c15-30ef-4ea6-ba62-4660eeb2a640" />
 <br />
-#3 Loss
+## Loss
 <img width="547" height="461" alt="Loss (2)" src="https://github.com/user-attachments/assets/c7b4d0e9-88ff-49b0-a518-8e234a094dc2" />
