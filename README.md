@@ -2,7 +2,7 @@
 
 This project practices on transfer-learning with ResNet50V2 model to classify car from 20 brands (3235 images) 
 A high-performance computer vision API built with FastAPI and TensorFlow. This service accepts car images and returns the predicted car type with a confidence score.
-It is containerized using Docker and deployed as a serverless microservice on AWS App Runner for automatic scaling and high availability.
+It is containerized using Docker, the image was pushed to store on AWS ECR and deployed as a serverless microservice on AWS App Runner for automatic scaling and high availability.
 
 ## Tech Stack
 Backend: FastAPI (Python 3.11)
