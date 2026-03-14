@@ -1,7 +1,31 @@
 # Car-Classification
 
-This project utilitzes keras to classify car from 20 brands (3235 images) 
+This project practices on transfer-learning with ResNet50V2 model to classify car from 20 brands (3235 images) 
+A high-performance computer vision API built with FastAPI and TensorFlow. This service accepts car images and returns the predicted car type with a confidence score.
+It is containerized using Docker and deployed as a serverless microservice on AWS App Runner for automatic scaling and high availability.
 
+## Tech Stack
+Backend: FastAPI (Python 3.11)
+ML Engine: TensorFlow / Keras
+Image Processing: OpenCV
+Deployment: Docker, Amazon ECR, AWS App Runner
+
+## API Usage
+Endpoint: POST /classify
+Uploads an image file for classification.
+
+Request:
+Method: POST
+Content-Type: multipart/form-data
+Body: file (Binary Image)
+Success Response:
+~~~
+{
+  "filename": "car_photo.jpg",
+  "prediction": "SUV",
+  "confidence": 0.9845
+}
+~~~
 ## Dataset example:
 <img width="1611" height="403" alt="input_example" src="https://github.com/user-attachments/assets/f3974e14-4bb1-4fbb-aa79-85a3008da51d" />
 <br />
@@ -10,9 +34,11 @@ Parameters:
 Optimizer='adam', loss="sparse_categorical_crossentropy", metrics=['accuracy'], epochs=8
 
 ## Accuracy and Loss
-<img width="547" height="461" alt="acc" src="https://github.com/user-attachments/assets/620f1c15-30ef-4ea6-ba62-4660eeb2a640" />
+
 <br />
-<img width="547" height="461" alt="Loss (2)" src="https://github.com/user-attachments/assets/c7b4d0e9-88ff-49b0-a518-8e234a094dc2" />
 
 ## Evaluation
 Loss: 1.6797804832458496, Accuracy: 0.7347561120986938
+
+## Deployment
+Build a docker image then push to AWS ECR and create AWS app runner to ...
