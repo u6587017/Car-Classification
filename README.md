@@ -34,8 +34,8 @@ Parameters:
 Optimizer='adam', loss="sparse_categorical_crossentropy", metrics=['accuracy'], epochs=8
 
 ## Accuracy and Loss
-
+![acc](acc.png)
 <br />
-
+![loss](Loss.png)
 ## Evaluation
 Loss: 1.23, Accuracy: 0.657
