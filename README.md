@@ -22,7 +22,7 @@ Success Response:
 ~~~
 {
   "filename": "car_photo.jpg",
-  "prediction": "SUV",
+  "prediction": "Nissan",
   "confidence": 0.9845
 }
 ~~~
