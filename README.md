@@ -38,7 +38,4 @@ Optimizer='adam', loss="sparse_categorical_crossentropy", metrics=['accuracy'], 
 <br />
 
 ## Evaluation
-Loss: 1.6797804832458496, Accuracy: 0.7347561120986938
-
-## Deployment
-Build a docker image then push to AWS ECR and create AWS app runner to ...
+Loss: 1.23, Accuracy: 0.657
